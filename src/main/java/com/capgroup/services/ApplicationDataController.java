@@ -115,29 +115,4 @@ public class ApplicationDataController {
 		//return list;
     }
 	
-	
-	
-	@CrossOrigin
-	@PostMapping("/priceQuery")
-	public double getPrices(int number) throws SQLException {
-		
-		
-		Random ran = new Random();
-		
-		List<Double> prices = new ArrayList<Double>();
-		double randomPrice = 0;
-		
-		int sum = 0;
-		for(int i = 0; i < number;i++) {
-			sum += ran.nextDouble();
-			System.out.println(ran.nextDouble());
-		}
-		
-		return sum/number;
-		
-		
-		//return dbClient.getPricesBySymbol(symbol);
-	}
-	
-	
 }
